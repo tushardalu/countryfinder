@@ -1,0 +1,36 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Country Finder App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <label for="sort">Sort by Population:</label>
+            <select id="sort" onchange="handleSortAndFilter()">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+
+            <label for="filter">Filter by Region:</label>
+            <select id="filter" onchange="handleSortAndFilter()">
+                <option value="all">All</option>
+                <option value="Africa">Africa</option>
+                <option value="America">America</option>
+                <option value="Asia">Asia</option>
+                <option value="Europe">Europe</option>
+                <option value="Oceania">Oceania</option>
+            </select>
+        </div>
+
+        <div id="countries-container" class="countries"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
